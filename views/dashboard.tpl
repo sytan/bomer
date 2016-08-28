@@ -63,7 +63,12 @@
     <div class="collapse my-sidebar" id="sidebar-collapse">
       <div class="well">
         <ul class="nav nav-pills nav-stacked">
-          <li role="presentation"><input type="file"></li>
+          <li role="presentation">
+            <form enctype="multipart/form-data" method="post">
+              <input type="file" name="uploadFile">
+              <input type="submit">
+            </form>
+          </li>
           <li role="presentation"><a href="#">Profile</a></li>
           <li role="presentation"><a href="#">Messages</a></li>
         </ul>

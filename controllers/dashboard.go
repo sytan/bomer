@@ -2,6 +2,8 @@
 package controllers
 
 import (
+	"fmt"
+
 	"github.com/astaxie/beego"
 )
 
@@ -10,8 +12,26 @@ type DashboardController struct {
 	beego.Controller
 }
 
+// FormController implement controller for form
+// type FormController struct {
+// 	beego.Controller
+// }
+
 // Get implement http Get
 func (c *DashboardController) Get() {
+	c.TplName = dashboardTPL
+}
+
+// Post implement http Post
+func (c *DashboardController) Post() {
+	f, h, err := c.GetFile("uploadFile")
+	path := "./" + h.Filename
+	defer f.Close()
+	if err != nil {
+		fmt.Println("getfile err ", err)
+	} else {
+		c.SaveToFile("uploadFile", path)
+	}
 	c.TplName = dashboardTPL
 }
 
