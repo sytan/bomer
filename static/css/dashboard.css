@@ -1,0 +1,25 @@
+body {
+  height: 100%;
+}
+.my-sidebar {
+  float:left;
+  margin-top: 50px;
+  /*position: relative;*/
+  position:fixed;
+  height: 100%;
+}
+.well {
+  height: 100%;
+}
+.my-btn {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.my-navbar-icon {
+  font-size: 22px;
+  color: #777;
+}
+.my-navbar-icon:hover,
+.my-navbar-icon:focus {
+  color: #fff;
+}
