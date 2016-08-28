@@ -42,6 +42,7 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Setting<span class="caret"></span></a>
               <ul class="dropdown-menu">
+                <li><a href="#">{{.username}}</a></li>
                 <li><a href="#">Log Out</a></li>
                 <!-- <li role="separator" class="divider"></li> -->
               </ul>
@@ -62,12 +63,43 @@
     <div class="collapse my-sidebar" id="sidebar-collapse">
       <div class="well">
         <ul class="nav nav-pills nav-stacked">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
+          <li role="presentation"><input type="file"></li>
           <li role="presentation"><a href="#">Profile</a></li>
           <li role="presentation"><a href="#">Messages</a></li>
         </ul>
       </div>
     </div>
+
+    <!-- container part -->
+    <div class="my-table">
+      <table class="table table-striped">
+        <tr>
+          <td>PN</td>
+          <td>DESC</td>
+          <td>CATALOG</td>
+        </tr>
+        <tr>
+          <td>PN</td>
+          <td>DESC</td>
+          <td>CATALOG</td>
+        </tr>
+        <tr>
+          <td>PN</td>
+          <td>DESC</td>
+          <td>CATALOG</td>
+        </tr>
+        <tr>
+          <td>PN</td>
+          <td>DESC</td>
+          <td>CATALOG</td>
+        </tr>
+        <tr>
+          <td>PN</td>
+          <td>DESC</td>
+          <td>CATALOG</td>
+        </tr>
+      </table>
+    </div><!--container end-->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

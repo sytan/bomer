@@ -23,3 +23,11 @@ body {
 .my-navbar-icon:focus {
   color: #fff;
 }
+
+.my-table{
+  /*float: right;*/
+  margin-top: 50px;
+}
+#fine-uploader-gallery{
+  margin-top: 200px;
+}

@@ -1,7 +1,9 @@
 // Package controllers implement router handler
 package controllers
 
-import "github.com/astaxie/beego"
+import (
+	"github.com/astaxie/beego"
+)
 
 // DashboardController implement controller for login
 type DashboardController struct {

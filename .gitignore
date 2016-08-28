@@ -3,6 +3,10 @@
 *.a
 *.so
 
+
+# Beego' executed file, the project name
+bomer
+ 
 # Folders
 _obj
 _test

@@ -24,3 +24,16 @@ func (c *IndexController) Get() {
 	c.Data["author"] = "Sytang"
 	c.TplName = indexTPL
 }
+
+// Post implement http post
+func (c *IndexController) Post() {
+	username := c.GetString("email")
+	password := c.GetString("password")
+	if username == "tashy1@163.com" && password == "swissvoice" {
+		c.Data["username"] = username
+		c.TplName = dashboardTPL
+	} else {
+		c.Data["failLogin"] = "Invalid user name and password, Please try again!"
+		c.TplName = indexTPL
+	}
+}
