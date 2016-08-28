@@ -1,11 +1,10 @@
 package main
 
 import (
-	_ "github.com/sy/bomanager/routers"
 	"github.com/astaxie/beego"
+	_ "github.com/sy/bomer/routers"
 )
 
 func main() {
 	beego.Run()
 }
-
