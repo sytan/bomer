@@ -1,6 +1,12 @@
 body {
   height: 100%;
 }
+footer {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  color: #999;
+}
 .my-sidebar {
   float:left;
   margin-top: 50px;
@@ -24,10 +30,14 @@ body {
   color: #fff;
 }
 
-.my-table{
+.my-table,
+.my-form-startRow{
   /*float: right;*/
   margin-top: 50px;
 }
 #fine-uploader-gallery{
   margin-top: 200px;
+}
+.my-form-control-index {
+  width: 80px;
 }

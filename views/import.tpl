@@ -63,7 +63,7 @@
       <div class="well">
         <ul class="nav nav-pills nav-stacked">
           <li role="presentation">
-            <form action="import" enctype="multipart/form-data" method="post">
+            <form enctype="multipart/form-data" method="post">
               <input type="file" name="uploadFile">
               <input type="submit">
             </form>
@@ -74,9 +74,46 @@
       </div>
     </div>
 
-    <div class="container">
+    <!-- container start -->
+    <div class="my-form-startRow">
+      <div class="my-table">
+        <span>After selecting your columns, click the 'Submit' button to upload your file.</span>
+        <form action="analyse" method="post">
+          <table class="table table-striped">
+            <tr>
+              <th><select class="form-control my-form-control-index" name="startIndex"> <!-- my-form-control-index to limit width</-->
+                <option value="1">Select where to start</option>
+                {{range $index,$_ := .rows}}
+                <option value="{{$index}}">{{add $index 1}}</option>
+                {{end}}
+              </select></th>
+              {{range .maxLengthCells}}
+    					<th><select class="form-control">
+    						<option value="Select A Column">Select A Column</option>
+    						<option value="Manufacturer Part Number">Manufacturer Part Number</option>
+    						<option value="Manufacturer Name">Manufacturer Name</option>
+    						<option value="Digi-Key Part Number">Digi-Key Part Number</option>
+    						<option value="Customer Reference">Customer Reference</option>
+    						<option value="Quantity 1">Quantity 1</option>
+    						<option value="Quantity 2">Quantity 2</option>
+    						<option value="Quantity 3">Quantity 3</option>
+    					</select></th>
+              {{end}}
+            </tr>
 
-    </div>
+            {{range $index,$row := .rows}}
+              <tr>
+                <td>{{add $index 1}}</td> <!--call add to increase $index-->
+                {{range $_,$cell := $row.Cells}}
+                <td>{{$cell.String}}</td>
+                {{end}}
+              </tr>
+            {{end}}
+          </table>
+          <input type="submit" class="btn btn-default" value="Submit">
+        </form>
+      </div>
+    </div><!--container end-->
 
     <footer>
       <div class="author">
@@ -86,7 +123,6 @@
         <a class="email" href="mailto:{{.email}}">{{.author}}</a>
       </div>
     </footer>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

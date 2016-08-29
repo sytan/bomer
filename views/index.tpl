@@ -7,7 +7,6 @@
     <!-- The three meta tag must be at the first beginning! -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>Welcome to Bomer</title>
 
@@ -32,7 +31,8 @@
           <a class="navbar-brand" href="#">Bomer</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right form-signin" method="post">
+          <!-- <form class="navbar-form navbar-right form-signin" action="dashboard" method="post"> -->
+          <form class="navbar-form navbar-right form-signin" action="dashboard" method="post">
             <div class="form-group">
               <input type="email" placeholder="Email" class="form-control" name="email">
             </div>
@@ -76,23 +76,21 @@
 
       <hr>
 
-  <footer>
-    <div class="author">
-      © 2016 :
-      <a href="{{.website}}">{{.company}}</a>
-       - All Rights Reserved. Terms of use. Design by
-      <a class="email" href="mailto:{{.email}}">{{.author}}</a>
-    </div>
-  </footer>
     </div> <!-- /container -->
 
+    <footer>
+      <div class="author">
+        © 2016 :
+        <a href="{{.website}}">{{.company}}</a>
+         - All Rights Reserved. Terms of use. Design by
+        <a class="email" href="mailto:{{.email}}">{{.author}}</a>
+      </div>
+    </footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../static/js/jquery-3.1.0.js"></script>
+    <script src="../static/bootstrap-3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>

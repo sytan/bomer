@@ -6,5 +6,10 @@ import (
 )
 
 func main() {
+	beego.AddFuncMap("add", add)
 	beego.Run()
+}
+
+func add(n, m int) int {
+	return n + m
 }
