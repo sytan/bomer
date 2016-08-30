@@ -88,7 +88,7 @@
                 {{end}}
               </select></th>
               {{range .maxLengthCells}}
-    					<th><select class="form-control">
+    					<th><select class="form-control" name="tableHeader">
     						<option value="Select A Column">Select A Column</option>
     						<option value="Manufacturer Part Number">Manufacturer Part Number</option>
     						<option value="Manufacturer Name">Manufacturer Name</option>

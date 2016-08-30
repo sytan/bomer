@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Welcome to Bomer</title>
+    <title>Bom analysis</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
