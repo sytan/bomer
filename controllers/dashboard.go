@@ -30,6 +30,6 @@ func (c *DashboardController) Post() {
 		c.TplName = dashboardTPL
 	} else {
 		c.Data["failLogin"] = "Invalid user name and password, Please try again!"
-		c.TplName = indexTPL
+		c.Redirect("/", 302)
 	}
 }
