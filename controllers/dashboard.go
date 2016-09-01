@@ -30,6 +30,6 @@ func (c *DashboardController) Post() {
 		c.TplName = dashboardTPL
 	} else {
 		c.Data["failLogin"] = "Invalid user name and password, Please try again!"
-		c.Redirect("/", 302)
+		c.Redirect("/", 302) //don't understand why it's 302
 	}
 }
